@@ -1,0 +1,160 @@
+                @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Bungee+Spice&family=Nabla&family=Press+Start+2P&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Nabla&family=Press+Start+2P&display=swap');
+                * {
+                    margin: 0px;
+                    padding: 0px;
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    width: 100%;
+                    height: 100vh;
+                    background-image: url(/assets/fundo.gif);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    padding: 80px;
+                }
+                
+                header {
+                    width: 100%;
+                    height: 300px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                header nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1500px;
+                    height: 300px;
+                }
+                
+                header .logo {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                header .logo img {
+                    width: 600px;
+                    height: 300px;
+                }
+                
+                main {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .container {
+                    margin: 25px auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    width: 1500px;
+                    height: 800px;
+                    background: rgba(255, 255, 255, 0.138);
+                    box-shadow: 0px 0px 32px 0 rgba(247, 81, 21, 0.71);
+                    backdrop-filter: blur( 13.5px);
+                }
+                
+                .thumbs {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 580px;
+                    height: 540px;
+                    flex-wrap: wrap;
+                }
+                
+                .mini {
+                    border-radius: 50%;
+                    margin: 10px;
+                    width: 120px;
+                    height: 120px;
+                    transition: .9s;
+                    overflow: hidden;
+                }
+                
+                .mini p {
+                    text-align: center;
+                    color: black;
+                }
+                
+                .mini img {
+                    width: 100%;
+                }
+                
+                .mini:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0px 0px 32px rgba(247, 81, 21, 0.71);
+                    transition: .5s;
+                    transform: scale(120%);
+                }
+                
+                .banner {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 820px;
+                    height: 700px;
+                    margin-top: 20px;
+                    color: black;
+                }
+                
+                .banner .img-maior {
+                    animation: moveSlowly 3s infinite alternate ease-in-out;
+                    width: 720px;
+                    height: 600px;
+                }
+                
+                .banner .img-maior img {
+                    width: 100%;
+                }
+                
+                .banner h1 {
+                    width: 100%;
+                    height: 90px;
+                    display: flex;
+                    text-transform: uppercase;
+                    /* font-family: 'Press Start 2P', cursive;
+                    font-family: 'Bungee Shade', cursive; */
+                    font-family: 'Bungee Spice', cursive;
+                    font-weight: 400;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+                
+                footer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: linear-gradient(to right, transparent, rgba(255, 39, 6, 0.5), rgba(247, 172, 21, 0.5), rgba(255, 39, 6, 0.5), transparent);
+                    text-align: center;
+                }
+                
+                footer p {
+                    font-size: 17px;
+                    letter-spacing: 6px;
+                    font-weight: bolder;
+                    color: black;
+                    font-family: sans-serif;
+                    width: 1500px;
+                }
+                
+                @keyframes moveSlowly {
+                    0% {
+                        transform: translateY(-10px);
+                    }
+                    100% {
+                        transform: translateY(10px);
+                    }
+                }
