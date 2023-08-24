@@ -1,7 +1,7 @@
 function show(file) {
 
     var ShowPhoto = document.getElementById('photo');
-    newPhoto = "/assets/prontos/" + file;
+    newPhoto = "./assets/prontos/" + file;
     ShowPhoto.src = newPhoto;
 
     console.log(file);
@@ -16,7 +16,7 @@ function show(file) {
 function hide() {
 
     var ShowPhoto = document.getElementById('photo');
-    ShowPhoto.src = "assets/a fazer/ryu.gif";
+    ShowPhoto.src = "./assets/a fazer/ryu.gif";
     document.getElementById('thetitle').innerHTML = "Street Fighter";
 
 }
